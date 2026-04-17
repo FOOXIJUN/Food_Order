@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fontawesome.com/search?q=door&c=users-people&o=r">
+<link rel="stylesheet" href="Loginindex.css">
+	<style>
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 20px 30px;
+		  text-decoration: none;
+		}
+		
+		@media screen and (max-width: 100px) {
+		  .topnav a {
+		    float: none;
+		    width: 100%;
+		  }
+		}
+
+ 
+        header {
+        margin:0;
+        background-color: #333;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 1px 1px #555;
+}
+
+.box {
+			display: inline-block;
+			width: 27%;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 20px;
+			text-align: center;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			vertical-align: top;
+		}
+		
+        .box p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+footer {
+        margin:0;
+        background-color: #333;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 1px 1px #555;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="topnav">
+    <a href="index.html?email=<?php echo $email;?>"><i class="fa fa-home"></i>F & C Fast Food</a>
+    <a href="Register.php" style="float:right"><i class="fa fa-address-card-o" aria-hidden="true"></i>Register</a>
+    <a href="Login.php" style="float:right"><i class="fa fa-sign-out" aria-hidden="true"></i>Log in</a>
+	</div>
+
+    <div class="image-container">
+
+    <div class="image-container">
+  <img id="image" src="menu/image_4.jpg" alt="Image 1" width="1503px" height="400px">
+</div>
+    </div>
+
+    <header>
+        Welcome to F & C Fast Food
+    </header>
+
+    <div class="box">
+    <img src="menu/logo_1.jpg" alt="My Image" width="400" height="250">
+    <p>Our Restaurant was founded in March 2023</p>
+    </div>
+
+    <div class="box">
+    <img src="menu/logo_2.jpg" alt="My Image" width="400" height="250">
+    	<p>Our restaurant just only for online food ordering</p>
+    </div>
+
+    <div class="box">
+    <img src="menu/logo_3.jpg" alt="My Image" width="400" height="250">
+    	<p>Over 5 deliverers so meals can be delivered on time</p>
+    </div>
+
+    <footer>
+        Hope everyone enjoy the meal happily
+</footer>
+
+	<script> 
+    var images = [
+    
+        "menu/image_4.jpg",
+        "menu/image_5.jpg",
+        "menu/image_6.jpg",
+        "menu/image_7.jpg"
+
+    
+    ];
+
+    var currentIndex = 0;
+    var totalImages = images.length;
+
+    var timer = setInterval(function() {
+        currentIndex++;
+        if (currentIndex >= totalImages) {
+            currentIndex = 0;
+        }
+        image.src = images[currentIndex];
+    }, 3000);
+</script>
+</body>
+</html>
