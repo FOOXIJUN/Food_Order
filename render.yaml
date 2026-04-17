@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: food-order-web
-    env: php
-    plan: free
-    branch: main
-    buildCommand: ""
-    startCommand: ""
-    autoDeploy: true
